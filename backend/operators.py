@@ -33,5 +33,6 @@ def divide(a,b):
     :param b: Deuxième nombre
     :return: La division des deux nombres
     """
-    # TODO: uniformiser en mettant b / a et aussi check pour si on veut faire division entière ou pas vu qu'on a des floats
-    return a // b
+    if b == 0:
+        raise ValueError("Division par 0 non acceptée")
+    return a / b
