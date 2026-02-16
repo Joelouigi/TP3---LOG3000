@@ -23,8 +23,7 @@ def multiply(a,b):
     :param b: Deuxième nombre
     :return: La multiplication de deux nombres
     """
-    # TODO: corriger le bug ici
-    return a ** b
+    return a * b
 
 def divide(a,b):
     """
