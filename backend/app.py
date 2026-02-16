@@ -11,6 +11,11 @@ OPS = {
 }
 
 def calculate(expr: str):
+    """
+    Cette fonction prend une chaîne de caractères et permet de donner le résultat mathématique de l'opération arithmétique
+    :param expr: Chaîne de caractères qui sont les nombres et opérations mathématiques que l'utilisateur a choisis
+    :return: Le résultat de l'opération arithmétique.
+    """
     if not expr or not isinstance(expr, str):
         raise ValueError("empty expression")
 
@@ -43,6 +48,10 @@ def calculate(expr: str):
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    """
+    Cette fonction s'occupe de répondre à une requête GET ou POST en donnant le résultat mathématique de l'expression reçu du formulaire
+    :return:
+    """
     result = ""
     if request.method == 'POST':
         expression = request.form.get('display', '')
