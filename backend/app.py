@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template
-from operators import add, subtract, multiply, divide
+from backend.operators import add, subtract, multiply, divide
 
 app = Flask(__name__)
 
@@ -50,7 +50,7 @@ def calculate(expr: str):
 def index():
     """
     Cette fonction s'occupe de répondre à une requête GET ou POST en donnant le résultat mathématique de l'expression reçu du formulaire
-    :return:
+    :return: Retourne le résultat à l'affichage UI sur la calculatrice
     """
     result = ""
     if request.method == 'POST':

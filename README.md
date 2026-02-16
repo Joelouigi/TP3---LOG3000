@@ -35,6 +35,10 @@ source .venv/bin/activate
 ```
 
 ### Utilisation
+**Installation des dépendances**
+```
+pip install flask pytest
+```
 **Lancer l'application**
 ```
 # Sous le répertoire /backend
