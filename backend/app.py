@@ -47,7 +47,10 @@ def calculate(expr: str):
     except ValueError:
         raise ValueError("operands must be numbers")
 
-    return OPS[op_char](a, b)
+    try:
+        return OPS[op_char](a, b)
+    except ValueError:
+        return 'Infini'
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
