@@ -36,7 +36,7 @@ def test_divide_by_zero():
     :return: None
     """
     with raises(ValueError):
-        divide(0, 69)
+        divide(69, 0)
 
 def test_addition_negative_with_positive():
     """
