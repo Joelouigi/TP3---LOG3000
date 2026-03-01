@@ -41,15 +41,15 @@ pip install flask pytest
 ```
 **Lancer l'application**
 ```
-# Sous le répertoire /backend
-python app.py
+# Au niveau de la racine
+python backend/app.py
 ```
 Vous pouvez ensuite entrer cette adresse dans votre moteur de recherche pour accéder à l'application http://127.0.0.1:5000
 
 ### Tests
 **Lancer les tests**
 ```
-# Sous le répertoire /tests
+# Au niveau de la racine
 python -m pytest
 ```
 
