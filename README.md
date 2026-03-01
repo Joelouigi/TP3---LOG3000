@@ -5,8 +5,8 @@
 Ce projet présente une plateforme pour une calculatrice. Cette dernière permet d'effectuer des calculs de plusieurs nombres avec comme opérations arithmétiques de bases : l'addition, la multiplication, la division et la soustraction.
 
 ### Prérequis
-- python (###mettre la version###)
-- pip
+- python (>= 3.10)
+- pip (>= 25)
 - flask
 
 ### Installation
